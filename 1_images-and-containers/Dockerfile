@@ -2,10 +2,10 @@
 FROM node
 
 # Diretório usado para executar a aplicação no container
-WORKDIR /app
+WORKDIR /src
 
 # Copiar arquivos para o container
-COPY package*.json /app
+COPY package*.json .
 
 # Rodar comandos, no caso instalação dos pacotes
 RUN npm install
