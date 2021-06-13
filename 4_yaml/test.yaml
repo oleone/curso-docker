@@ -1,0 +1,43 @@
+# Comentário 1
+nome: "Bruno"
+idade: 30
+
+# Comentário 2
+objeto:
+  test: 1
+  test2: true
+  test3: false
+
+# Comentário 3
+array:
+  - bla
+  - ble
+  - bli
+  - obj:
+    a: true
+    b: false
+    c:
+      - d
+      - e
+      - f
+
+# Comentário 4
+objeto2:
+  objeto_filho:
+    bla: ble
+    bli: blo
+    blu: blun
+
+# Comentário 5
+objeto3:
+  inteiro: 1
+  decimal: 1.5
+  nullo: null
+  nullo2: ~
+
+# Comentário 6
+objeto4:
+  verdadeiro1: True
+  verdadeiro2: On
+  falso1: False
+  falso2: Off
