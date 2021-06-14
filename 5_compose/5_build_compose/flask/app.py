@@ -7,7 +7,7 @@ from flask_mysqldb import MySQL
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
-app.config['MYSQL_HOST'] = 'flaskdocker-sql-container'
+app.config['MYSQL_HOST'] = 'db'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'flaskdocker'
@@ -29,7 +29,7 @@ def inserthost():
     mysql.connection.commit()
     cur.close()
 
-    return username
+    return "Usuário inserido: " + username
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True, port="5000")
