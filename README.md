@@ -9,10 +9,10 @@
 `docker image ls`
 
 ### Rodar container
-`docker run -d -p PORTA_LOCAL:PORTA_DOCKER ID_IMAGEM`
+`docker run -d -p PORTA_LOCAL:PORTA_DOCKER --name NOME_CONTAINER ID_IMAGEM`
 
 ### Stopar Container
-`docker stop ID_IMAGEM`
+`docker stop NOME_CONTAINER`
 
 ### Baixar imagem
 `docker pull IMAGEM`
